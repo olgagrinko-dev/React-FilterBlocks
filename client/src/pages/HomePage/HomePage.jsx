@@ -25,7 +25,6 @@ function HomePage() {
             <Input icon={<IconSearch />} placeholder="Введите название вакансии" />
             <div>{result}</div>
         </div>
-
     )
 }
 

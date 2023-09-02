@@ -1,13 +1,13 @@
 .item {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 773px;
-    margin: auto;
+    flex-direction: column;   
+    width: 773px;   
     border-radius: 12px;
     border: 1px solid var(--Grey-200, #EAEBED);
     background: #FFF;
+    gap: 20px;
     padding: 25px;
+    margin: auto;
     margin-bottom: 15px;
 
     h2 {
