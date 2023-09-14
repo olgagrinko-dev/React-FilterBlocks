@@ -14,7 +14,8 @@ function VacancyPage() {
     }, [])
 
     return (
-        <div>
+        <div className={style.wrapper}>
+            
             <div className={style.vacancy}>
                 <h1>{data.header}</h1>
 
@@ -27,7 +28,9 @@ function VacancyPage() {
                     <div className={style.img}></div>
                     <p>{data.city}</p>
                 </div>
+            </div>
 
+            <div className={style.charge}>
 
             </div>
 
