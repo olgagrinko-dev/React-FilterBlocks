@@ -14,8 +14,20 @@ function VacancyPage() {
     }, []);
 
     const result = array.map((elem) => <Link to={`/vacancy/${elem.id}`}>
-
-    </Link>);
+        <div className={style.infoWork}>
+            <div className={style.responsibilitiesWork}>
+                <h2>{elem.responsibilities}</h2>
+                <p>{elem.responsibilities}</p>
+            </div>
+            <div className={style.requirementsWork}>
+                <h2>{elem.requirements}</h2>
+                <p>{elem.requirements}</p>
+            </div>
+            <div className={style.conditionsWork}>
+                <h2>{elem.conditions}</h2>
+                <p>{elem.conditions}</p>
+            </div>
+        </div> </Link>);
 
     return (
         <div className={style.wrapper}>
