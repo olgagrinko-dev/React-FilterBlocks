@@ -11,11 +11,15 @@ function VacancyPage() {
         const result = array.filter((elem) => elem.id == id);
         console.log(result);
         setData(result[0]);
-    }, [])
+    }, []);
+
+    const result = array.map((elem) => <Link to={`/vacancy/${elem.id}`}>
+
+    </Link>);
 
     return (
         <div className={style.wrapper}>
-            
+
             <div className={style.vacancy}>
                 <h1>{data.header}</h1>
 
