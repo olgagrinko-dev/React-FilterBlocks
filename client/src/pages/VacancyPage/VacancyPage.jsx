@@ -14,7 +14,7 @@ function VacancyPage() {
     }, []);
 
     useEffect(() => {
-        const res = array.map((elem) => )
+        const res = array.map((elem) => );
         console.log(res);
         setData(res[0]);
     }, []);
@@ -37,19 +37,18 @@ function VacancyPage() {
 
             <div className={style.infoWork}>
                 <div className={style.responsibilitiesWork}>
-                    <h2>{elem.responsibilities}</h2>
-                    <p>{elem.responsibilities}</p>
+                    <h2>{data.responsibilities}</h2>
+                    <p>{data.responsibilities}</p>
                 </div>
                 <div className={style.requirementsWork}>
-                    <h2>{elem.requirements}</h2>
-                    <p>{elem.requirements}</p>
+                    <h2>{data.requirements}</h2>
+                    <p>{data.requirements}</p>
                 </div>
                 <div className={style.conditionsWork}>
-                    <h2>{elem.conditions}</h2>
-                    <p>{elem.conditions}</p>
+                    <h2>{data.conditions}</h2>
+                    <p>{data.conditions}</p>
                 </div>
             </div>
-
         </div>
     )
 }
