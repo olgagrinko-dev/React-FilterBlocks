@@ -56,7 +56,23 @@
         }
     }
 
-    .charge {
-        
+    .infoWork {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .responsibilitiesWork h2,
+        .requirementsWork h2,
+        .conditionsWork h2 {
+            color: var(--Black, #232134);
+            font: 700 20px Inter;          
+        }
+
+        .responsibilitiesWork p,
+        .requirementsWork p,
+        .conditionsWork p {
+            color: var(--Black, #232134);           
+            font: 400 16px Inter;            
+        }
     }
 }
