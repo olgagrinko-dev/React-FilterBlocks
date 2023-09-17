@@ -5,7 +5,7 @@ import style from './style.module.scss';
 
 function VacancyPage() {
     const { id } = useParams();
-    const [data, setData] = useState({})
+    const [data, setData] = useState({});
 
     useEffect(() => {
         const result = array.filter((elem) => elem.id == id);
@@ -13,25 +13,14 @@ function VacancyPage() {
         setData(result[0]);
     }, []);
 
-    const result = array.map((elem) => <Link to={`/vacancy/${elem.id}`}>
-        <div className={style.infoWork}>
-            <div className={style.responsibilitiesWork}>
-                <h2>{elem.responsibilities}</h2>
-                <p>{elem.responsibilities}</p>
-            </div>
-            <div className={style.requirementsWork}>
-                <h2>{elem.requirements}</h2>
-                <p>{elem.requirements}</p>
-            </div>
-            <div className={style.conditionsWork}>
-                <h2>{elem.conditions}</h2>
-                <p>{elem.conditions}</p>
-            </div>
-        </div> </Link>);
-
+    useEffect(() => {
+        const res = array.map((elem) => )
+        console.log(res);
+        setData(res[0]);
+    }, []);
+   
     return (
         <div className={style.wrapper}>
-
             <div className={style.vacancy}>
                 <h1>{data.header}</h1>
 
@@ -46,8 +35,19 @@ function VacancyPage() {
                 </div>
             </div>
 
-            <div className={style.charge}>
-
+            <div className={style.infoWork}>
+                <div className={style.responsibilitiesWork}>
+                    <h2>{elem.responsibilities}</h2>
+                    <p>{elem.responsibilities}</p>
+                </div>
+                <div className={style.requirementsWork}>
+                    <h2>{elem.requirements}</h2>
+                    <p>{elem.requirements}</p>
+                </div>
+                <div className={style.conditionsWork}>
+                    <h2>{elem.conditions}</h2>
+                    <p>{elem.conditions}</p>
+                </div>
             </div>
 
         </div>
