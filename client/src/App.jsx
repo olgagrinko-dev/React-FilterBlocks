@@ -8,7 +8,6 @@ function App() {
       <Route path={'/'} element={<HomePage />} />
       <Route path={'/vacancy/:id'} element={<VacancyPage />} />
     </Routes>
-
   </>
 }
 
