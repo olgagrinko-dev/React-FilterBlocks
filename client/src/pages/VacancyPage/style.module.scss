@@ -68,18 +68,14 @@
         border: 1px solid var(--Grey-200, #EAEBED);
         background: #FFF;
 
-        .responsibilitiesWork h2,
-        .requirementsWork h2,
-        .conditionsWork h2 {
+        h2 {
             color: var(--Black, #232134);
-            font: 700 20px Inter;           
+            font: 700 20px Inter;
         }
 
-        .responsibilitiesWork p,
-        .requirementsWork p,
-        .conditionsWork p {
-            color: var(--Black, #232134);           
-            font: 400 16px Inter;                   
+        li {
+            color: var(--Black, #232134);
+            font: 400 16px Inter;
         }
     }
 }

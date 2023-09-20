@@ -13,8 +13,6 @@ function VacancyPage() {
         setData(result[0]);
     }, []);
 
-    // const obj = [{header: 'Обязанности:', responsibilities}, {header: 'Требования:'}, {header: 'Условия:'}]
-
     return (
         <div className={style.wrapper}>
             <div className={style.vacancy}>
@@ -31,24 +29,22 @@ function VacancyPage() {
                 </div>
             </div>
 
-
             <div className={style.infoWork}>
                 <div className={style.responsibilitiesWork}>
                     <h2>Обязанности:</h2>
-                    {data.responsibilities?.map((elem) => <p>{elem}</p>)}
+                    <ul>{data.responsibilities?.map((elem) => <li>{elem}</li>)}</ul>
                 </div>
 
                 <div className={style.requirementsWork}>
                     <h2>Требования:</h2>
-                    {data.requirements?.map((elem) => <p>{elem}</p>)}
+                    <ul>{data.requirements?.map((elem) => <li>{elem}</li>)}</ul>
                 </div>
 
                 <div className={style.conditionsWork}>
                     <h2>Условия:</h2>
-                    {data.conditions?.map((elem) => <p>{elem}</p>)}
+                    <ul>{data.conditions?.map((elem) => <li>{elem}</li>)}</ul>
                 </div>
             </div>
-
         </div>
     )
 }
